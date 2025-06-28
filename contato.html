@@ -10,8 +10,13 @@
   </header>
 
   <main>
-    <!-- O segredo: usar method="GET" e action="index.html" -->
-    <form action="index.html" method="get">
+    <!-- Formulário com FormSubmit + redirecionamento para index.html -->
+    <form action="https://formsubmit.co/antoniohelio826@gmail.com" method="POST">
+      <!-- Redireciona após o envio -->
+      <input type="hidden" name="_next" value="https://helio826.github.io/Prova/index.html">
+      <!-- Impede spam automático -->
+      <input type="hidden" name="_captcha" value="false">
+
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required><br>
 
@@ -29,6 +34,11 @@
   </main>
 
   <footer>
+    <p><a href="index.html">Voltar à página inicial</a></p>
+  </footer>
+</body>
+</html>
+
     <p><a href="index.html">Voltar à página inicial</a></p>
   </footer>
 </body>
